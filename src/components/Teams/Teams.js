@@ -1,8 +1,8 @@
 import React from 'react';
-import { useEffect, useState } from 'react/';
+import { useEffect, useState } from 'react/cjs/react.production.min';
 import { fetchTeams } from '../../services/fetchTeams';
 
-export default function TeamList() {
+export default function Teams() {
   const [teams, setTeams] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -26,6 +26,11 @@ export default function TeamList() {
     
     
     
-    </div>
+    Teams</div>
   );
 }
+
+
+
+    
+  
