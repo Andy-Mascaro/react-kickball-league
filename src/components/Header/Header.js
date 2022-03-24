@@ -5,6 +5,7 @@ export default function Header() {
   return (
     <div className="header">
       <NavLink exact to={'/teamList'}>Teams</NavLink>
+      
     
     
     </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react/';
 import { fetchTeams } from '../../services/fetchTeams';
-
+import { Link } from 'react-router-dom';
 export default function TeamList() {
   const [teams, setTeams] = useState([]);
   useEffect(() => {
@@ -14,12 +14,12 @@ export default function TeamList() {
     <div className='teams'>
       <h1>Teams</h1>
       <ul>
-        {teams.map((team) => {
-          <div> key={team.team}</div>;
-      //* need for link once have team detail *//
-      // add <TeamDetail once it is done//
-    
-        })}
+        {teams.map((team) => (
+          <div key={team.team}>
+      
+            <Link exact to={`/team/${team.id}`}>{team.name}</Link>
+          </div>
+        ))}
 
       </ul>
     
