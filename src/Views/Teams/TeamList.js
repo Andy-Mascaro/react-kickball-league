@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react/';
 import { fetchTeams } from '../../services/fetchTeams';
 import { Link } from 'react-router-dom';
+
 export default function TeamList() {
   const [teams, setTeams] = useState([]);
   useEffect(() => {

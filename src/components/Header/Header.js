@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div className="header">
       <NavLink exact to={'/teams'}>Teams</NavLink>
-      
+      <NavLink exact to={'/players'}>Players</NavLink>
     
     
     </div>

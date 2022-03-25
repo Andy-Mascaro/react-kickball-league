@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import TeamDetails from './Views/Teams/TeamDetails';
-
+import PlayerList from './Views/Teams/Players/PlayerList';
 
 
 function App() {
@@ -14,6 +14,9 @@ function App() {
       <Switch>
         <Route path="/teams/:id">
           <TeamDetails />
+        </Route> 
+        <Route exact path="/players">
+          <PlayerList />
         </Route> 
         <Route exact path="/teams">
           <TeamList />
