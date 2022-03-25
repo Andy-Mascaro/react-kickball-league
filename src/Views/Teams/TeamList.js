@@ -17,7 +17,7 @@ export default function TeamList() {
         {teams.map((team) => (
           <div key={team.team}>
       
-            <Link exact to={`/team/${team.id}`}>{team.name}</Link>
+            <Link exact to={`/teams/${team.id}`}>{team.name}</Link>
           </div>
         ))}
 

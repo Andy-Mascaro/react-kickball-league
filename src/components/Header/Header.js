@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export default function Header() {
   return (
     <div className="header">
-      <NavLink exact to={'/teamList'}>Teams</NavLink>
+      <NavLink exact to={'/teams'}>Teams</NavLink>
       
     
     
