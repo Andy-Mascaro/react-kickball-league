@@ -13,12 +13,11 @@ export default function PlayerList() {
     fetchData();
   }, []); 
   return (
-    <div className="player-list">
+    <div className='player'>
       <h1>League Players</h1>
       {player.map((info) => (
         <div key={info.info}>
-          <Link exact to={`/players/${player.id}`}>{player.name}</Link>
-
+          <Link exact to={`/players/${info.id}`}>{info.name}</Link>
         </div>
 
       ))}

@@ -1,7 +1,7 @@
 
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { fetchTeamsId } from '../../services/fetchTeamsId';
+import { fetchTeamsId } from '../../../services/fetchTeamsId';
 
 export default function TeamDetails() {
   const params = useParams();
@@ -32,12 +32,6 @@ export default function TeamDetails() {
           ))}
         </ul>
       </div>
-         
-       
-
-
-      
-    
     </div>
   );
 }
