@@ -21,9 +21,6 @@ export default function TeamList() {
           </div>
         ))}
       </ul>
-    
-    
-    
     </div>
   );
 }
