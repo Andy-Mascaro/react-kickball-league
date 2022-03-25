@@ -20,7 +20,6 @@ export default function TeamList() {
             <Link exact to={`/teams/${team.id}`}>{team.name}</Link>
           </div>
         ))}
-
       </ul>
     
     
