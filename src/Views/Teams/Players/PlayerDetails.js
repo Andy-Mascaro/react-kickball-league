@@ -25,13 +25,6 @@ export default function PlayerDetails() {
         <h2>Name: {playerDetail.name}</h2>
         <h3>Position: {playerDetail.position}</h3>
         <h2>Team: {playerDetail.teams.name}</h2>
-        <ul>
-
-          {/* {playerDetail.team((team) => (
-            <li key= {team.id}>{team.name}
-            </li>              
-          ))} */}
-        </ul>
       </div>
     </div>
   );
