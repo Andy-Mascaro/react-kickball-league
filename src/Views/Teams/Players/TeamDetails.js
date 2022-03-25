@@ -2,6 +2,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { fetchTeamsId } from '../../../services/fetchTeamsId';
+import { Link } from 'react-router-dom';
 
 export default function TeamDetails() {
   const params = useParams();
@@ -27,7 +28,7 @@ export default function TeamDetails() {
         <ul>
           {teamDetail.players.map ((player) => (
             <li key= {player.id}>
-              {player.name}
+              <Link to={`/players/${player.id}`}>{player.name}</Link>
             </li>
           ))}
         </ul>
